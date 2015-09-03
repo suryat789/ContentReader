@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Welcome to Employee Management Application</title>
+</h:head>
+
+<p:breadCrumb>
+	<p:menuitem value="Home" url="index.xhtml" />
+	<p:menuitem value="Contents" url="fileContents.xhtml" disabled="true"/>
+</p:breadCrumb>
+<h:body>
+	<p:outputPanel deferred="true" deferredMode="visible">
+		<h3>File Type: #{fileUploadView.fileType}</h3>
+		<h3>Contents:</h3>
+		<pre>#{fileUploadView.fileContents}</pre>
+	</p:outputPanel>
+
+</h:body>
+</html>
